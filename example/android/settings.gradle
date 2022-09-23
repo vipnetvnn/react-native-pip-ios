@@ -1,0 +1,6 @@
+rootProject.name = 'PipIosExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativepipios'
+project(':reactnativepipios').projectDir = new File(rootProject.projectDir, '../../android')
